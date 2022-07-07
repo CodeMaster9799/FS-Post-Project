@@ -1,0 +1,110 @@
+footer{
+    background: #F7F9FC;
+    a{
+        font-weight: 400;
+    }
+}
+.footer-content{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding-top: 60px;
+    @include position(null,space-between,null);
+    h3{
+        margin-bottom: 24px;
+    }
+    li{
+        margin-bottom: 16px;
+        list-style: none;
+    }
+}
+.footer-email-text{
+    @include position(null,space-between,null);
+    width: 180px;
+    margin-bottom: 48px;
+}
+.footer-image-text p{
+    margin-top: 30px;
+    width: 200px;
+    text-align: left;
+}   
+.company-list, .product-list{
+    @include position(column,space-between,flex-start);
+}
+.footer-icons{
+    width: 300px;
+    @include position(column,null,flex-start);
+}
+.icon img{
+    margin-right: 20px;
+}
+.end{
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    @include position(null,space-between,null);
+    
+}
+.end > div:nth-child(2){
+    @include position(null,space-between,null);
+    width: 330px;
+}
+@include xs{
+    // Footer content
+    .footer-content{
+        max-width: 100%;
+        margin-bottom: 0;
+        @include position(column,null,center);
+    }
+    .icon-text{
+        justify-content: center;
+    }
+    .footer-image-text p{
+        text-align: center;
+        width: 270px;
+        margin-bottom: 40px;
+    }
+    .company-list, .product-list, .footer-icons{
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .footer-product{
+        h3{
+            text-align: center;
+        }
+    }
+    .end{
+        max-width: 100%;
+        justify-content: center;
+        border-top: 3px solid #EDF1F7;
+        padding-top: 26px;
+        div:nth-child(2){
+            display: none;
+        }
+    }
+    //Main content
+    .blog-main-container{
+        max-width: 95%;
+    }
+    .main-content{
+        width: 100%;
+        justify-content: center;
+    }
+    .main-buttons button{
+        margin-right: 8px;
+    }
+    .main-card{
+        margin: 0 0 2rem 0;
+        img{
+            margin: 8px 8px 24px 0px;
+            width: 100%;
+        }
+    }
+    .card{
+        display: none;
+    }
+    .number-bar{
+        width: 100%;
+        margin-bottom: 90px;
+    }
+}

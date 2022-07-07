@@ -1,0 +1,47 @@
+.error-page{
+    max-width: 37%;
+    margin: 0 auto;
+    text-align: center;
+}
+.error-page h2{
+    margin-top: 80px;
+    font-size: 34px;
+}
+.error-page p{
+    color: #8F9BB3;
+    font-weight: 400;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+.error-page-btn{
+    @include position(row,center,center);
+}
+.error-page-btn button{
+    color: map-get($colors, "list-color");
+    background-color: map-get($colors,"primary-color");
+    border: 1px solid  map-get($colors,"button-bgcolor");
+    padding: 10px 36px;
+    font-weight: 400;
+    margin-top: 64px;
+    margin-right: 25px;
+    border-radius: 8px;
+    &:hover{
+        color:  map-get($colors,"primary-color");
+        background-color: map-get($colors, "main-color");
+        transition: 0.8s;
+    }
+}
+
+@include xs{
+    .error-page{
+        max-width: 100%;
+        h2{
+            font-size: 24px;
+        }
+        p{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+}

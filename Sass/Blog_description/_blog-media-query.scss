@@ -1,0 +1,31 @@
+@include xs{
+    //Section or Main  content
+    .blog-des-container{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .author-image-text{
+        display: none
+    }
+    .author-image{
+        h1{
+            font-size: 24px;
+            line-height: 32px;
+            width: 85%;
+            margin: 24px auto;
+        }
+    }
+    .container-header-image img , .container-text-image img{
+        width: 100%;
+    }
+    form{
+        @include position(column, null ,null);
+    }
+    .comment-text-btn button{
+        width: 100%;
+    }
+    //Footer
+    .footer-container{
+        max-width: 90%;
+    }
+}

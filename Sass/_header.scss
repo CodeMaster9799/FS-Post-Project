@@ -1,0 +1,94 @@
+.container{
+    border-bottom: 2px solid #EDF1F7;
+    border-radius: 0;
+}
+header{
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    @include position(null,space-between,center);
+}
+.hamburger-menu{
+    display: none;
+}
+.icon-text{
+    @include position(null,null,center);
+}
+.icon-text h2{
+    margin-left: 16px;
+    color: map-get($colors, "main-color");
+}
+.list ul{
+    display: flex;
+    gap: 2rem;
+    margin-left: 210px;
+}
+.list li{
+    color: map-get($colors, "list-color");
+    list-style: none;
+    a:hover{
+        color: map-get($colors, "first-backgroundcolor");
+        transition: 0.2s;
+    }
+}
+.head-buttons{
+    @include position(null,null,center);
+    button{
+        padding: 12px 26px;
+        border-radius: 8px;
+        font-weight: 400;
+    }
+    img{
+        display: none;
+    }
+}
+.head-buttons button:nth-child(1){
+    color: map-get($colors, "list-color");
+    background: map-get($colors,"primary-color");
+    border: 1px solid  map-get($colors,"button-bgcolor");
+    margin-right: 8px;
+    &:hover{
+        background: map-get($colors,"first-backgroundcolor");
+        color: map-get($colors,"primary-color");
+        transition: 0.8s;
+    }
+}
+.head-buttons button:nth-child(3){
+    color: map-get($colors,"primary-color");
+    background-color: map-get($colors,"first-backgroundcolor");
+    border: none;
+}
+@include xs{
+    //header or Navbar
+    .container{
+        max-width: 90%;
+        margin: 0 auto; 
+    }
+    header{
+        max-width: 100%;
+        justify-content: space-between;
+        .list{
+            display: none;
+        }
+        .hamburger-menu{
+            display: inline-block;
+            div{
+                width: 20px;
+                height: 2px;
+                margin: 6px 0;
+                background-color: map-get($colors,"main-color");
+            }
+        }
+        .head-buttons button:nth-child(1){
+            display: none;
+        }
+        .head-buttons button{
+            padding: 12px;
+        }
+        .head-buttons img{
+            display: inline-block;
+            margin-right: 16px;
+        }
+    }
+}

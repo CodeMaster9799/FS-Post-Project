@@ -1,0 +1,20 @@
+$colors: (
+    "first-backgroundcolor": #FF3D71,   //  map-get($colors,"first-backgroundcolor")
+    "second-bgcolor": #FFF2F2,          //  map-get($colors,"second-bgcolor")
+    "primary-color": #FFFFFF,           //  map-get($colors,"primary-color")
+    "main-color": #2E3A59,              //  map-get($colors, "main-color")
+    "list-color": #222B45,              //  map-get($colors, "list-color")
+    "second-textcolor": #8F9BB3,        //  map-get($colors,"second-textcolor")
+    "border-color": #E4E9F2,            //  map-get($colors,"border-color")
+    "button-bgcolor": #C5CEE0           //  map-get($colors,"button-bgcolor")
+    //CFD8DC
+    //ECEFF1
+    //F7F9FC-blog-body-input
+    //8F9BB3
+    //dodgerblue
+    //3366FF
+);
+
+$breakpoints: (
+    "xs": 576px,
+)

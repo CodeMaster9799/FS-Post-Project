@@ -1,0 +1,170 @@
+.blog-main-container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.blog-buttons{
+    text-align: center;
+}
+.blog-buttons h1{
+    margin-top: 50px;
+}
+.main-buttons{
+    margin-top: 32px;
+    margin-bottom: 64px;
+    @include position(null, center,null);
+    button{
+        padding: 6px 16px;
+        margin-right: 24px;
+        font-weight: 400;
+    }
+}
+.main-buttons button:nth-child(1){
+    background: map-get($colors,"first-backgroundcolor");
+    color: map-get($colors,"primary-color");
+    border: none;
+    &:hover{
+        background-color: map-get($colors,"primary-color");
+        color:  map-get($colors, "main-color");
+        transition: 0.8s;
+    }
+}
+.main-buttons button:nth-child(2), .main-buttons button:nth-child(3){
+    border: 1px solid map-get($colors,"button-bgcolor");
+    background-color: map-get($colors,"primary-color");
+    color:  map-get($colors, "main-color");
+    &:hover{
+        background: map-get($colors,"first-backgroundcolor");
+        color: map-get($colors,"primary-color");
+        transition: 0.8s;
+    }
+}
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 84rem;
+}
+.main-card{
+    max-width: 24rem;
+    margin: 0 2rem 3rem 0;
+    box-shadow: 0px 16px 32px rgba(118, 127, 154, 0.20);
+    border-radius: 8px;
+    img{
+        margin: 8px 8px 24px 8px;
+    }
+    h3{
+        padding: 0 16px;
+        font-size: 20px;
+    }
+    &:hover{
+        transform: scale(1.1);
+        transition: all 1s;
+    }
+}
+.main-card-buttons{
+    margin: 24px 0px;
+}
+.main-card-buttons button{
+    font-weight: 400;
+    color:  map-get($colors, "main-color");
+    padding: 6px 16px;
+    border: 1px solid map-get($colors,"button-bgcolor");
+    background-color: map-get($colors,"primary-color");
+    margin-left: 16px;
+    &:hover{
+        background: map-get($colors, "list-color");
+        color: map-get($colors,"primary-color");
+        transition: 0.5s
+    }
+}
+// CardContent
+.card{
+    @include position(null, space-around,center);
+    background: #FF708D;
+    border-radius: 16px;
+    width: 1216px;
+    height: 240px;
+    margin-top: 115px;
+    margin-bottom: 105px;
+}
+.card-bg{
+    position: absolute;
+    left: 150px;
+    margin-top: 92px;
+}
+.card-text h1{
+    margin-bottom: 25px;
+    color: map-get($colors,"primary-color");
+    font-size: 48px;
+}
+.card-text p{
+    width: 528px;
+    color: map-get($colors,"primary-color");
+    font-weight: 400;
+}
+.card-btn{
+    @include position(row,center,center);
+}
+.card-btn button:nth-child(1){
+    &:hover{
+        background: map-get($colors, "list-color");
+        color: map-get($colors,"primary-color");
+        transition: 0.8s
+    }
+    padding: 14px 52px;
+    margin-right: 24px;
+    background: map-get($colors,"primary-color");
+    font-size: 16px;    
+    border-radius: 8px;
+    color: map-get($colors, "list-color");
+    border: none;
+}
+.card-btn button:nth-child(2){
+    padding: 14px 28px;
+    background: map-get($colors, "list-color");
+    border-radius: 8px;
+    color: map-get($colors,"primary-color");
+    border: none;
+}
+// Number scrollbar
+.number-bar{
+    width: 458px;
+    margin: 0 auto;
+    margin-top: 80px;
+    @include position(null,space-between,null);
+    img{
+        cursor: pointer;
+    }
+}
+.number-button-bar{
+    width: 60%;
+    @include position(null,space-between,null);
+}
+.number-button-bar button{
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    background: map-get($colors,"primary-color");
+    border: none;
+    border-radius: 8px;
+    color:  map-get($colors, "main-color");
+    font-weight: 400;  
+    width: 32px;
+    height: 40px;
+}
+.number-button-bar button:nth-child(3){
+    background: map-get($colors,"first-backgroundcolor");
+    color: map-get($colors,"primary-color");
+}
+.number-bar img:hover{
+    background: map-get($colors,"first-backgroundcolor");
+    transition: 0.5s;
+}
+.number-button-bar button:hover{
+    background: map-get($colors,"first-backgroundcolor");
+    color: map-get($colors,"primary-color");
+    transition: 0.5s;
+}
+.number-button-bar button:nth-child(5):hover{
+    background: map-get($colors,"primary-color");
+    color:  map-get($colors, "main-color");
+}

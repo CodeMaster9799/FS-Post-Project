@@ -1,0 +1,18 @@
+@import url('http://fonts.cdnfonts.com/css/euclid-circular-a');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 600;
+    color: #2E3A59;
+    text-decoration: none;
+    line-height: 24px;
+    p{
+        font-weight: 400;
+    }
+    button{
+        cursor: pointer;
+    }
+}

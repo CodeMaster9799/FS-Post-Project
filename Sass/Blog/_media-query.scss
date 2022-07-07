@@ -1,0 +1,27 @@
+@include xs{
+    //Main content
+    .blog-main-container{
+        max-width: 95%;
+    }
+    .main-content{
+        width: 100%;
+        justify-content: center;
+    }
+    .main-buttons button{
+        margin-right: 8px;
+    }
+    .main-card{
+        margin: 0 0 2rem 0;
+        img{
+            margin: 8px 8px 24px 0px;
+            width: 100%;
+        }
+    }
+    .card{
+        display: none;
+    }
+    .number-bar{
+        width: 100%;
+        margin-bottom: 90px;
+    }
+}
